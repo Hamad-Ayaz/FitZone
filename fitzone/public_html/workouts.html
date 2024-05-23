@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = en>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scheduling</title>
+    <link rel="stylesheet" type="text/css" href="workouts_style.css">
+  </head>
+  <body>
+    <header>
+
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="left-container">
+        <div class="category-container">
+          <h2 class="top-heading">Workout Categories</h2>
+          <div class="toggle-btn">
+            <button id="predefined-btn" class="active">Predefined</button>
+            <button id="custom-btn">Custom</button>
+          </div>
+          <ul id="category-list">
+            <!-- Category list items will be generated dynamically using JavaScript -->
+          </ul>
+        </div>
+          <div class="add-container">
+            <h2>Add Category</h2>
+            <form id="add-category-form">
+              <label for="category-name">Category Name:</label>
+              <input type="text" id="category-name">
+              <button type="submit">Add</button>
+            </form>
+          </div>  
+          <div class="add-container">
+            <h2>Add Workouts to Category</h2>
+            <form id="add-workouts-form">
+              <label for="workouts-name">Workouts Name:</label>
+              <button id = "workouts-name" type="submit">Add</button>
+            </form>
+          </div>
+      </div>
+      <div class="right-container">
+        <h2 class="top-heading">Selected Workouts</h2>
+        <div class="workout-list">
+          <ul id="selected-workouts-list">
+            <!-- Selected workouts will be added dynamically using JavaScript -->
+          </ul>
+        </div>
+        <div class="add-workout-list-container">
+          <label for="list-name">List Name:</label>
+          <input type="text" id="list-name">
+          <label for="list-date">List Date:</label>
+          <select id="list-date">
+            <option value="">Select Date</option>
+          </select>
+          <button id="add-list-btn">Add List</button>
+        </div>
+      </div>
+      </div>
+    <script src="java/workouts.js"></script>
+    <footer>
+      <p>&copy; MyFitnessApp 2023</p>
+    </footer>
+  </body>
+</html>

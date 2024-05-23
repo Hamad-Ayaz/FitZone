@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = en>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" type="text/css" href="profile_style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="profile-container">
+      <h1>My Profile</h1>
+      <div class="profile-info">
+        <p><strong>Name:</strong> <span id="name">John Doe</span></p>
+        <p><strong>Gender:</strong> <span id="gender">Male</span></p>
+        <p><strong>Height:</strong> <span id="height">6' 0" (183 cm)</span> <button id="edit-height" class="edit-btn">Edit</button></p>
+        <p><strong>Weight:</strong> <span id="weight">180 lbs (82 kg)</span> <button id="edit-weight" class="edit-btn">Edit</button></p>
+        <p><strong>BMI:</strong> <span id="bmi">180 lbs (82 kg)</span></p>
+      </div>
+    </div>
+    <div class="search-container">
+      <h2>Search for Users</h2>
+      <input type="text" placeholder="Search Users">
+      <button id="search">Search</button>
+    </div>
+    <div class="users-container">
+      <ul id="users">
+        <!-- list of users goes here -->
+      </ul>
+    </div>
+    <footer>
+      <p>&copy; MyFitnessApp 2023</p>
+    </footer>  
+    <script src="java/profile.js"></script>
+  </body>
+</html>

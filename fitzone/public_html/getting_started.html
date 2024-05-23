@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang =en>
+<head>
+	<meta charset="UTF-8">
+	<title>FitZone - Getting Started</title>
+	<link rel="stylesheet" type="text/css" href="getting_started_style.css">
+</head>
+<body>
+	<div class="messages-container">
+		<h1>Welcome to FitZone!</h1>
+		<p>Please answer the following questions to help us personalize your fitness plan.</p>
+	</div>
+	<div class="container">
+		<form method="POST" action="/update-profile">
+			<label for="height">Height in Inches:</label>
+			<input type="number" id="height" name="height" required>
+			<label for="weight">Weight in Pounds:</label>
+			<input type="number" id="weight" name="weight" required>
+			<label for="sex">Sex:</label>
+			<select id="sex" name="sex" required>
+				<option value="">Choose</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="prefer-not-to-say">Prefer not to say</option>
+			</select>
+			<label for="fitness-level">Fitness Level:</label>
+			<select id="fitness-level" name="fitness-level" required>
+				<option value="">Choose</option>
+				<option value="beginner">Beginner</option>
+				<option value="intermediate">Intermediate</option>
+				<option value="advanced">Advanced</option>
+			</select>
+			<label for="gym-equipment">Do you have gym equipment?</label>
+			<select id="gym-equipment" name="gym-equipment" required>
+				<option value="">Choose</option>
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</select>
+			<label for="fitness-goals">Write something for your public profile.</label>
+			<textarea id="fitness-goals" name="fitness-goals" required></textarea>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	<script src="java/getting_started.js"></script>
+</body>
+</html>

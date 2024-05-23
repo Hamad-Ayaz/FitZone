@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = en>
+  <head>
+    <meta charset="UTF-8">
+    <title>MyFitnessApp</title>
+    <link rel="stylesheet" type="text/css" href="homepage_style.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="workouts.html">Workouts</a></li>
+              <li><a href="nutrition.html">Nutrition</a></li>
+              <li><a href="help.html">Help</a></li>
+            </ul>
+          </nav>
+          
+    </header>
+    <main>
+    <div class="calendar">
+      <h2>My Calendar</h2>
+      <h4>click on table cells for detailed view</h4>
+      <button class="reset-btn" id="reset-btn">Clear Calendar</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id = "1" class="day" onclick="location.href='stats.html?day=1';" ><a>1</a></td>
+            <td id="2" class="day" onclick="location.href='stats.html?day=2';"><a>2</a></td>
+            <td id="3" class="day" onclick="location.href='stats.html?day=3';"><a>3</a></td>
+            <td id="4" class="day" onclick="location.href='stats.html?day=4';"><a>4</a></td>
+            <td id="5" class="day" onclick="location.href='stats.html?day=5';"><a>5</a></td>
+            <td id="6" class="day" onclick="location.href='stats.html?day=6';"><a>6</a></td>
+            <td id="7" class="day" onclick="location.href='stats.html?day=7';"><a>7</a></td>
+          </tr>
+          <tr>
+            <td id="8" class="day" onclick="location.href='stats.html?day=8';"><a>8</a></td>
+            <td id="9" class="day" onclick="location.href='stats.html?day=9';"><a>9</a></td>
+            <td id="10" class="day" onclick="location.href='stats.html?day=10';"><a>10</a></td>
+            <td id="11" class="day" onclick="location.href='stats.html?day=11';"><a>11</a></td>
+            <td id="12" class="day" onclick="location.href='stats.html?day=12';"><a>12</a></td>
+            <td id="13" class="day" onclick="location.href='stats.html?day=13';"><a>13</a></td>
+            <td id="14" class="day" onclick="location.href='stats.html?day=14';"><a>14</a></td>
+          </tr>
+          <tr>
+            <td id="15" class="day" onclick="location.href='stats.html?day=15';"><a>15</a></td>
+            <td id="16" class="day" onclick="location.href='stats.html?day=16';"><a>16</a></td>
+            <td id="17" class="day" onclick="location.href='stats.html?day=17';"><a>17</a></td>
+            <td id="18" class="day" onclick="location.href='stats.html?day=18';"><a>18</a></td>
+            <td id="19" class="day" onclick="location.href='stats.html?day=19';"><a>19</a></td>
+            <td id="20" class="day" onclick="location.href='stats.html?day=20';"><a>20</a></td>
+            <td id="21" class="day" onclick="location.href='stats.html?day=21';"><a>21</a></td>
+          </tr>
+          <tr>
+            <td id="22" class="day" onclick="location.href='stats.html?day=22';"><a>22</a></td>
+            <td id="23" class="day" onclick="location.href='stats.html?day=23';"><a>23</a></td>
+            <td id="24" class="day" onclick="location.href='stats.html?day=24';"><a>24</a></td>
+            <td id="25" class="day" onclick="location.href='stats.html?day=25';"><a>25</a></td>
+            <td id="26" class="day" onclick="location.href='stats.html?day=26';"><a>26</a></td>
+            <td id="27" class="day" onclick="location.href='stats.html?day=27';"><a>27</a></td>
+            <td id="28" class="day" onclick="location.href='stats.html?day=28';"><a>28</a></td>
+          </tr>
+          <tr>
+            <td id="29" class="day" onclick="location.href='stats.html?day=29';"><a>29</a></td>
+            <td id="30" class="day" onclick="location.href='stats.html?day=30';"><a>30</a></td>
+            <td id="31" class="day" onclick="location.href='stats.html?day=31';"><a>31</a></td>
+            <td  class="day"></td>
+            <td  class="day"></td>
+            <td  class="day"></td>
+            <td  class="day"></td>
+        </tbody>
+      </table>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; MyFitnessApp 2023</p>
+      </footer>
+      <script src="java/homepage.js"></script>
+  </body>
+</html>
+          

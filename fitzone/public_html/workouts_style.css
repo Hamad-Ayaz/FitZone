@@ -1,0 +1,279 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.toggle-btn {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.toggle-btn button {
+  flex: 1;
+  max-width: 200px;
+  padding: 10px;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+}
+
+.toggle-btn button.active {
+  background-color: #ccc;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#category-list li {
+  max-width: 400px;
+  margin: 10px 10px 10px 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.add-container{
+  margin-left: 30px;
+}
+
+.add-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.add-container label {
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.add-container input[type="text"] {
+  font-size: 16px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.add-container button[type="submit"] {
+  font-size: 16px;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-container button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+.exercises-list {
+  margin: 10px 0 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  overflow: auto;
+  max-height: 200px;
+  background-color: #f8f8f8;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 100px; /* adjust this value as needed */
+
+}
+
+.left-container {
+  width: 48%;
+}
+
+.right-container {
+  width: 48%;
+}
+
+.bottom-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+h2.top-heading {
+  margin-left: 30px;
+}
+
+/**/
+
+#selected-workouts-list li {
+  max-width: 400px;
+  margin: 10px 10px 10px 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#selected-workouts-list li:hover {
+  background-color: #ddd;
+}
+
+#selected-workouts-list li button {
+  font-size: 14px;
+  padding: 4px 8px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+#selected-workouts-list li button:hover {
+  background-color: #c82333;
+}
+
+.workout-list {
+  border: 1px solid #ccc;
+  overflow-y: scroll;
+  max-height: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #f8f8f8;
+  min-height: 100px; /* Set a minimum height */
+  max-width: 90%;
+
+}
+
+
+/**/
+.add-workout-list-container label {
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.add-workout-list-container input[type="text"],
+#list-date {
+  font-size: 16px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+
+
+#add-list-btn {
+  font-size: 16px;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#add-list-btn:hover {
+  background-color: #0069d9;
+}
+
+.category-container{
+  margin-bottom: 40px;
+}
+
+.add-workout-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+
+}
+
+.add-workout-button:hover {
+  background-color: #0069d9;
+}
+
+footer {
+	position:relative;
+	width: 98%;
+	background-color: #222;
+	color: #fff;
+	padding: 10px;
+	margin-top: 150px;
+	text-align: center;
+  }
+
+/* Common styles for both remove category and remove exercise buttons */
+.remove-category-button,
+.remove-exercise-button {
+  background-color: #f44336; /* Red background */
+  border: none;
+  color: white;
+  text-decoration: none;
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  padding: 5px;
+}
+.remove-exercise-button {
+margin-top: 4px;
+}
+.remove-category-button {
+  top: 50%;
+  transform: translateY(-10%);
+}
+
+.remove-category-button:hover,
+.remove-exercise-button:hover {
+  background-color: #d32f2f; /* Darken the red background on hover */
+  color: white;
+}
+.category-item {
+  position: relative;
+}
+

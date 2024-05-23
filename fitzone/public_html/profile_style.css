@@ -1,0 +1,227 @@
+/* Set default styles for the body element */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8f8f8;
+	margin: 0;
+	padding: 0;
+  }
+  
+  header {
+	background-color:#222;
+	color: #fff;
+	padding: 10px;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+
+  nav li:last-child {
+	margin-right: 0;
+  }
+  
+  nav a {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  /* Add styles for the add workout container */
+  .add-workout-container {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 20px;
+  }
+  
+  /* Style the form inside the add workout container */
+  #add-workout-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  /* Style the label and select elements inside the form */
+  label, select {
+	margin-bottom: 10px;
+  }
+  
+  /* Style the input element inside the form */
+  input[type="text"] {
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+  }
+  
+  /* Style the button inside the form */
+  button[type="submit"] {
+	padding: 5px 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #444;
+  }
+  
+  .profile-container {
+	border: 1px solid black;
+	background-color: #fff;
+	width: 80%; /* Add this line */
+	max-width: 1200px; /* Change the max-width value here */
+	margin: 0 auto;
+	padding: 20px;
+	margin-top: 30px;
+  }
+  
+	
+	
+	.profile-info {
+	  font-size: 16px;
+	  line-height: 1.5;
+	  margin-top: 20px;
+	}
+	
+	.profile-info strong {
+	  font-weight: bold;
+	}
+  /* Style the search form */
+  .search-form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 20px;
+  }
+  
+  /* Style the search input */
+  .search-input {
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	width: 70%;
+  }
+  
+  /* Style the search button */
+  .search-btn {
+	padding: 5px 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-left: 10px;
+  }
+  
+  .search-btn:hover {
+	background-color: #444;
+  }
+  
+  /* Style the users container */
+  .users-container {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 40px;
+	margin-left: 100px;
+	width: 80%;
+	max-width: 800px;
+	height: 300px;
+	overflow: auto;
+  }
+
+  /* Remove bullet points from the users list */
+#users {
+	list-style: none;
+	padding: 0;
+  }
+  
+/* Style the user data in the users container */
+#users li {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: lightgray;
+  }
+  
+
+/* Style the search container */
+.search-container {
+	margin-top: 50px;
+	margin-left: 100px;
+  }
+  
+  input[type=text] {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid #ddd;
+	font-size: 16px;
+  }
+  
+  input[type=text]:focus {
+	outline: none;
+	border-bottom: 2px solid #555;
+  }
+  
+  button#search {
+	background-color: black;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	margin-left: 10px;
+  }
+  
+  button#search:hover {
+	background-color: grey;
+  }
+  
+  footer {
+	position:relative;
+	left: 0;
+	bottom: 0;
+	width: 98%;
+	background-color: #222;
+	color: #fff;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+  }
+  
+  .edit-btn {
+	background-color: black;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	cursor: pointer;
+	padding: 6px 12px;
+	border-radius: 4px;
+	transition: background-color 0.2s;
+  }
+  
+  .edit-btn:hover {
+	background-color: grey;
+  }
+  
+  
+  

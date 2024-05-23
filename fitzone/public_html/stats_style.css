@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.workouts {
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  flex-grow: 1;
+  min-height: 34vh;
+
+}
+
+h2 {
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+.meals {
+  background-color: #fff;
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+  min-height: 34vh;
+
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.workout-meal-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.reset-btn-wrapper {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-top: 10px;
+}
+
+.btn {
+  margin-right: 10px;
+  float: right;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+#total-calories {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.workouts ul li {
+  margin-bottom: 10px;
+}
+
+.meals li {
+  margin-bottom: 10px;
+}
+

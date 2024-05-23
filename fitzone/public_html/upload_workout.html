@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang =en>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scheduling</title>
+    <link rel="stylesheet" type="text/css" href="upload_workout_style.css">
+  </head>
+  <body>
+    <header>
+      <a href="workouts.html?tab=custom">Return to Workouts</a>
+    </header>
+    <div class="add-workout-container">
+      <h2>Add Workout to Category</h2>
+      <form id="add-workout-form">
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+          <!-- Categories will be generated dynamically using JavaScript -->
+        </select>
+        <br>
+        <label for="workout-name">Workout-Name:</label>
+        <input type="text" id="workout-name">
+        <br>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <script src="java/upload_workout.js"></script>
+  </body>
+</html>

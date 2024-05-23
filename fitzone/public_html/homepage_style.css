@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.calendar {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+th {
+  background-color: #222;
+  color: #fff;
+}
+
+.day {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.day.active {
+  background-color: #222;
+  color: #fff;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.day {
+  position: relative;
+  width: 120px; /* Fixed width */
+  height: 120px; /* Fixed height */
+  overflow: auto;
+}
+
+.day a {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.workout-container {
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.workout-list {
+  display: block;
+}
+
+.meal-count {
+  display: block;
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+}
+
+.day:hover {
+  background-color: #ffa07a; /* change to the desired color */
+  cursor: pointer;
+}
+
+.reset-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.reset-btn:hover {
+  background-color: #444;
+}
+

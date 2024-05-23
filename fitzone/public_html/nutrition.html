@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang =en>
+  <head>
+    <meta charset="UTF-8">
+    <title>Nutrition</title>
+    <link rel="stylesheet" type="text/css" href="nutrition_style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="nutrition">
+        <h1>Nutrition</h1>
+        <form id="createMeal">
+          <label for="meal">Meal:</label>
+          <input type="text" id="meal" name="meal"><br>
+      
+          <label for="description">Nutritional information:</label>
+          <textarea id="description" name="description"></textarea><br>
+      
+          <label for="calories">Calories:</label>
+          <input type="number" id="calories" name="calories"><br>
+
+          <label for="list-date">List Date:</label>
+          <select id="list-date">
+          <option value="">Select Date</option>
+          </select>
+
+          <input type="submit" value="create Meal">
+        </form>
+     
+        
+
+      </div>
+      
+      <script src="java/nutrition.js"></script>
+    <footer>
+      <p>&copy; 2023 Fitness App</p>
+    </footer>
+  </body>
+</html>
